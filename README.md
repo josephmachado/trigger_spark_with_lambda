@@ -48,6 +48,10 @@ Once the EMR cluster is ready, the steps will be run. You can check the output u
 aws s3 ls s3://<your-bucket-prefix>-clean-data/clean_data/
 ```
 
+## Deploy
+
+When you make changes to lambda, you can deploy them using the `./deploy_lambda.sh` script.
+
 ## Teardown
 
 When you are done don't forget to tear down the buckets, lambda function, EMR cluster, roles and policies. Use the `tear_down.sh` script as shown below.
