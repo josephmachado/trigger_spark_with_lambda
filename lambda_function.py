@@ -6,6 +6,7 @@ import boto3
 
 
 def _get_spark_steps(ip_data_bkt: str, ip_data_key: str) -> List[Dict[str, Any]]:
+    # These are environment variables we define during our lambda function creation
     output_bkt = os.environ.get("OUTPUT_LOC")
     script_bkt = os.environ.get("SCRIPT_BUCKET")
     SPARK_STEPS = [
