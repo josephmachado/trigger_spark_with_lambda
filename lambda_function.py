@@ -52,7 +52,7 @@ def _get_spark_steps(ip_data_bkt: str, ip_data_key: str) -> List[Dict[str, Any]]
 
 def _get_cluster_id(cluster_name: str = "sde-lambda-etl-cluster") -> str:
     """
-    Given a cluster name, return the first cluster ids
+    Given a cluster name, return the first cluster id
     of all the clusters which have that cluster name
     """
     client = boto3.client("emr")
